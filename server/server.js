@@ -19,6 +19,9 @@ app.use(express.urlencoded({ extended: true }))
 // auth route
 app.use("/api/auth",require("./routes/authRoute"))
 
+// data route
+app.use("/api",require("./routes/dataRoute"))
+
 app.get('/',(req,res)=>{
     res.json({
         msg:"WELCOME TO RESTGen API 1.0"
