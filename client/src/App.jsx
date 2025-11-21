@@ -6,6 +6,7 @@ import Register from './pages/register';
 import DeshBoard from './componets/deshBoard';
 import Navbar from './componets/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 const App = () => {
   
 
@@ -18,6 +19,7 @@ const App = () => {
     <Route path='/register' element={<Register/>}/>
     <Route path='/dashboard' element={<DeshBoard/>}/>
    </Routes>
+   <ToastContainer/>
    </BrowserRouter>
     </main>
   )

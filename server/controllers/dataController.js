@@ -5,7 +5,6 @@ const addData = async(req,res)=>{
   
     const {dataObj} =req.body
 
-    console.log(dataObj)
 
     if(!dataObj){
         res.status(400)

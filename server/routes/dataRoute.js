@@ -5,6 +5,6 @@ const router = express.Router()
 
 router.post("/data",addData)
 router.get("/data",getAllData)
-router.get("/data/:id",getSingleData)
+router.get("/data/:id/:dbName",getSingleData)
 
 module.exports = router
