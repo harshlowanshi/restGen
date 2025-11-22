@@ -1,12 +1,10 @@
 import React from 'react'
-
-import { useState } from 'react';
-import Login from './pages/login';
-import Register from './pages/register';
 import DeshBoard from './componets/deshBoard';
 import Navbar from './componets/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import Login from './pages/Login';
+import Register from './pages/Register';
 const App = () => {
   
 
@@ -17,7 +15,7 @@ const App = () => {
    <Routes>
     <Route path='/login' element={<Login/>}/>
     <Route path='/register' element={<Register/>}/>
-    <Route path='/dashboard' element={<DeshBoard/>}/>
+    <Route path='/' element={<DeshBoard/>}/>
    </Routes>
    <ToastContainer/>
    </BrowserRouter>
