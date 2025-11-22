@@ -46,10 +46,13 @@ const getSingleData = async(req,res)=>{
         throw new Error("Data not fund")
     }
 
-    res.json(singleData)
+    res.status(200).json(
+        {
+            restData:singleData.dataObj
+        }
+    )
 
 }
-
 
 
 module.exports={addData,getAllData,getSingleData}

@@ -4,7 +4,7 @@ const { addData, getAllData, getSingleData } = require("../controllers/dataContr
 const router = express.Router()
 
 router.post("/data",addData)
-router.get("/data",getAllData)
-router.get("/data/:id/:dbName",getSingleData)
+router.get("/restDataDB",getAllData)
+router.get("/restData/:id/:dbName",getSingleData)
 
 module.exports = router
