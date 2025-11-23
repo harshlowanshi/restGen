@@ -1,6 +1,6 @@
 
   import { useState } from 'react';
-  import ApiPreview from './apiPreview';
+  import ApiPreview from './ApiPreview';
   import DataSetBuilder from './DatasetBuilder';
   import { useDispatch, useSelector } from 'react-redux';
   import { addRestData } from '../features/restData/restDataSlice';

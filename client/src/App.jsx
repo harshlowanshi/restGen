@@ -1,10 +1,11 @@
 import React from 'react'
-import Navbar from './componets/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import DeshBoard from './componets/DeshBoard';
+import DeshBoard from './components/DeshBoard';
+
 
 const App = () => {
 
