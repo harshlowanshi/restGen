@@ -2,7 +2,7 @@ const { mongoose } = require("mongoose");
 
 const dataSchma = new mongoose.Schema({
 dataObj :{
-    type:String,
+    type:Object ,
     require:[true,"please add data"]
 }
 },{
