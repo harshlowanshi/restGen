@@ -66,8 +66,9 @@ export  const registerUser=createAsyncThunk("AUTH/USER/REGITER",async(formData,t
 try {
     return await service.register(formData)
 } catch (error) {
-   const message = error.response.data.msg
-  return thunkAPI.rejectWithValue(message)}
+ const message = error.response.data.msg
+  return thunkAPI.rejectWithValue(message)
+}
 })
 
 export  const loginUser = createAsyncThunk("AUTH/USER/LOGIN",async(formData,thunkAPI)=>{
