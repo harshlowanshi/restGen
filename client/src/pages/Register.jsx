@@ -38,6 +38,9 @@ const Register = ( ) => {
   
 
   useEffect(()=>{
+       if(user){
+      navigate("/")
+    }
   if(isError && message){
      toast.error(message,{position:"top-center"})
       }

@@ -30,7 +30,7 @@ const Login = () => {
   }
 
   useEffect(()=>{
-    if(user){
+     if(user){
       navigate("/")
     }
     if(isError && message){
