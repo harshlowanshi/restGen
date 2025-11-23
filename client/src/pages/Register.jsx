@@ -1,12 +1,12 @@
 import React, { useEffect,useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { registerUser } from '../features/auth/authSlice'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Loader from '../componets/Loader'
 import {toast} from 'react-toastify'
 
 const Register = ( ) => {
-  
+  const navigate = useNavigate()
   const {user ,isLoading,isSuccess ,isError,message}=useSelector(state=>state.auth)
   const dispatch =useDispatch()
   const [formData ,setFormdata]=useState({
