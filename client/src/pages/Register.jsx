@@ -45,7 +45,9 @@ const Register = ( ) => {
      toast.error(message,{position:"top-center"})
       }
       
-  },[isError,message])
+  },[user
+     ,isError
+     ,message])
 
   if(isLoading){
     return(
