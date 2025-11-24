@@ -21,8 +21,6 @@ app.use(cors({
   credentials: true
 }));
 
-app.options("*", cors());
-
 
 // body params 
 app.use(express.json())
