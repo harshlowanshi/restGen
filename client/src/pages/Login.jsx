@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { loginUser } from '../features/auth/authSlice';
 import { toast } from 'react-toastify';
-import Loader from '../componets/Loader';
+import Loader from '../components/Loader';
 
 const Login = () => {
   const navigate =useNavigate()
