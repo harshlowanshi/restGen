@@ -1,6 +1,7 @@
 const express = require("express")
 const connectDB = require("./dbConfig/dbConfig")
 const errorHandler = require("./middlewares/errorHandler")
+const cors =require("cors")
 
 require("dotenv").config()
 
@@ -9,6 +10,18 @@ const app = express()
 
 //connect DB
 connectDB()
+
+//proxy set 
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://rest-gen.vercel.app"   
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
+app.options("*", cors());
 
 
 // body params 
