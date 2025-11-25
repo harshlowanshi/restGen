@@ -27,7 +27,7 @@ dispatch(logOutUser())
             <>
               <Link to={"/login"}
                 // onClick={() => onNavigate('login')}
-                className={`px-8  py-1 rounded-lg border border-white  font-medium transition-all duration-300 transform hover:scale-105 ${
+                className={`px-6  py-[0.2em] rounded-lg border border-white  font-medium transition-all duration-300 transform hover:scale-105 ${
                   currentPage === 'login'
                     ? 'bg-indigo-500/30 text-indigo-300 border border-indigo-500 animate-scale-in'
                     : 'text-slate-300 hover:text-indigo-300 border border-transparent hover:border-indigo-500/50'
@@ -36,7 +36,7 @@ dispatch(logOutUser())
                 Login
               </Link>
               <Link to={"/register"}
-                className={`px-6 py-1  border border-white rounded-lg font-medium transition-all duration-300 transform hover:scale-105 ${
+                className={`px-6 py-[0.2em]  border border-white rounded-lg font-medium transition-all duration-300 transform hover:scale-105 ${
                   currentPage === 'register'
                     ? 'bg-emerald-500/30 text-emerald-300 border border-emerald-500 animate-scale-in'
                     : 'text-slate-300 hover:text-emerald-300 border border-transparent hover:border-emerald-500/50'
@@ -48,7 +48,7 @@ dispatch(logOutUser())
           ) : (
             <>
               <Link to={"/"}
-                className={`px-5 py-1 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 ${
+                className={`px-4 py-[0.2em] rounded-lg font-medium transition-all duration-300 transform hover:scale-105 ${
                   currentPage === 'dashboard'
                     ? 'bg-indigo-500/30 text-indigo-300 border border-indigo-500 animate-scale-in'
                     : 'text-slate-300 hover:text-indigo-300 border border-white hover:border-indigo-500/50'
@@ -58,7 +58,7 @@ dispatch(logOutUser())
               </Link>
               <button
               onClick={()=>logout()}
-                className="px-5 py-1 text-slate-200 border border-rose-500/30 rounded-lg hover:bg-rose-500/10 hover:text-rose-300 transition-all duration-300 font-medium transform hover:scale-105"
+                className="px-3 py-[0.2em] text-slate-200 border border-rose-500/30 rounded-lg hover:bg-rose-500/10 hover:text-rose-300 transition-all duration-300 font-medium cursor-pointer transform hover:scale-105"
               >
                 Logout
               </button>
