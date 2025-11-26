@@ -153,13 +153,13 @@ const DataSetBuilder = ({
       href={`https://restgen.onrender.com/api/restData/${restDatas._id}/${apiName}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="font-mono text-teal-300 underline hover:text-teal-400"
+      className="font-mono   text-teal-300 underline hover:text-teal-400  break-all"
     >
-      http://localhost:8080/api/restData/{restDatas._id}/{apiName}
+     https://restgen.onrender.com/api/restData/{restDatas._id}/{apiName}
     </a>
   ) : (
-    <span className="font-mono text-slate-500 cursor-text">
-      http://localhost:8080/api/restData/../{apiName}
+    <span className="  font-mono text-slate-500 cursor-text  break-all   ">
+    https://restgen.onrender.com/api/restData/../{apiName}
     </span>
   )}
 </p>
